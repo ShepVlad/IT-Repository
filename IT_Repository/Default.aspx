@@ -25,13 +25,14 @@
                 <div class="caption">
                     <h3>Четкая Аудитория со Стивом</h3>
                     <p>Текст о чем-то </p>
-
                     <p>
                         <a href="#" class="btn btn-primary" role="button">Узнать Больше</a>
                     </p>
 
                 </div>
+                 <input type="text" name="Teste" value="" placeholder="Test relationship with C#" />
             </div>
+           
 
         </div>
 
