@@ -10,10 +10,10 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  
     <title></title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -38,6 +38,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    
 </body>
 </html>
