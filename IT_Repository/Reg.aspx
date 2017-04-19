@@ -48,7 +48,6 @@
                             </asp:DropDownList>
                         </div>
                     </fieldset>
-
                     <fieldset>
                         <div class="form-group">
                             <div class="col-md-12">
