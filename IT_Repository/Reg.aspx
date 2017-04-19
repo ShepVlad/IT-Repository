@@ -51,7 +51,7 @@
                     <fieldset>
                         <div class="form-group">
                             <div class="col-md-12">
-                                <asp:Button CssClass="btn btn-success" ID="btnRegister" runat="server" Text="Зарегистрироваться" />
+                                <asp:Button CssClass="btn btn-success" ID="btnRegister" runat="server" Text="Зарегистрироваться" OnClick="btnRegister_Click" />
                                 <asp:HyperLink ID="btnLoginRef" runat="server">Уже зарегистрированы?</asp:HyperLink>
                             </div>
                         </div>
