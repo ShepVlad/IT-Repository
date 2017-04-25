@@ -16,32 +16,34 @@
 
                     <div class="form-group col-md-6">
                         <label>Имя</label>
-                        <asp:TextBox CssClass="form-control" ID="txtFirstName" runat="server" placeholder="First Name" />
+                        <asp:TextBox CssClass="form-control" ID="txtFirstName" runat="server" placeholder="First Name" required="required"/>
                     </div>
 
                     <div class="form-group col-md-6">
                         <label>Фамилия</label>
-                        <asp:TextBox CssClass="form-control" ID="txtLastName" runat="server" placeholder="Last Name" />
+                        <asp:TextBox CssClass="form-control" ID="txtLastName" runat="server" placeholder="Last Name" required="required"/>
                     </div>
 
                     <div class="form-group col-md-12">
                         <label>Email</label>
-                        <asp:TextBox TextMode="Email" CssClass="form-control" ID="txtEmail" runat="server" placeholder="example@email.com" />
+                        <asp:TextBox TextMode="Email" CssClass="form-control" ID="txtEmail" runat="server" placeholder="example@email.com" required="required" />
                     </div>
 
                     <div class="form-group col-md-6">
                         <label>Пароль</label>
-                        <asp:TextBox TextMode="Password" CssClass="form-control" ID="txtPassword" runat="server" placeholder="********" />
+                        <asp:TextBox TextMode="Password" CssClass="form-control" ID="txtPassword" runat="server" placeholder="********" required="required" />
                     </div>
 
                     <div class="form-group col-md-6">
                         <label>Подтвердите пароль</label>
-                        <asp:TextBox TextMode="Password" CssClass="form-control" ID="txtConfirmPassword" runat="server" placeholder="********" />
+                        <asp:TextBox TextMode="Password" CssClass="form-control" ID="txtConfirmPassword" runat="server" placeholder="********" required="required" />
                     </div>
+                    
+                   
 
                     <div class="form-group col-md-6">
                         <label>Страна проживания</label>
-                        <asp:DropDownList ID="ddlCountry" CssClass="form-control" runat="server">
+                        <asp:DropDownList ID="ddlCountry" CssClass="form-control" runat="server" required="required">
                             <asp:ListItem>Украина</asp:ListItem>
                             <asp:ListItem>Россия</asp:ListItem>
                             <asp:ListItem>Белоруссия</asp:ListItem>
@@ -51,8 +53,8 @@
                 <fieldset>
                     <div class="form-group">
                         <div class="col-md-12">
-                            <asp:Button CssClass="btn btn-success" ID="btnRegister" runat="server" Text="Зарегистрироваться" OnClick="btnRegister_Click" PostBackUrl="/Reg.aspx" />
-                            <asp:HyperLink ID="btnLoginRef" runat="server">Уже зарегистрированы?</asp:HyperLink>
+                            <asp:Button CssClass="btn btn-success" ID="btnRegister" runat="server" Text="Зарегистрироваться" OnClick="btnRegister_Click" />
+                           
                         </div>
                     </div>
                 </fieldset>

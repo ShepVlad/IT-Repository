@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <users>
-  
-  <user id="1" login="sa" passw="student" email="step@gmail.com" country="Украина" />
-  
+  <user id="1" passw="student" email="step@gmail.com" country="Украина" name="VDVNK" lname="SMLSN" />
+  <user id="2" passw="12345" email="vlad@mail.ru" country="Украина" name="Vlad" lname="Shepeliuk" />
 </users>
