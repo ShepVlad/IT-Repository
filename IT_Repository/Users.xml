@@ -1,4 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <users>
-  <user id="1" login="admin" passw="21232f297a57a5a743894a0e4a801fc3" email="admin@ukr.net" regdate="2017-04-19 20:55:00" status="admin" />
+  
+  <user id="1" login="sa" passw="student" email="step@gmail.com" country="Украина" />
+  
 </users>
