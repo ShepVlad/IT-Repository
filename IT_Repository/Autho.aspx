@@ -18,8 +18,8 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <button type="submit" class="btn btn-success">Submit</button>
-                     <button type="button" class="btn">Forgot your password?</button>
+                    <asp:Button type="submit" ID="btnSubmit" runat="server" Text="Submit"/>
+                    <asp:Button type="button" ID="btnForgot" runat="server" Text="Forgot your password?"/>
 
                 </fieldset>
             </form>
