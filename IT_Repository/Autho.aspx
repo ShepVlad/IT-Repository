@@ -19,8 +19,8 @@
                 </fieldset>
                 <fieldset>
 
-                    <asp:Button type="submit" ID="btnSubmit" runat="server" Text="Submit"/>
-                    <asp:Button type="button" ID="btnForgot" runat="server" Text="Forgot your password?"/>
+                    <asp:Button type="submit" ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click"/>
+                    <asp:Button type="button" ID="btnForgot" runat="server" Text="Forgot your password?" OnClick="btnForgot_Click"/>
 
                  
 
