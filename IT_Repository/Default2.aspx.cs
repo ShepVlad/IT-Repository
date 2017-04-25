@@ -34,6 +34,8 @@ public partial class Default2 : System.Web.UI.Page
         else
         {
             output.Text = "OKAY";
+            Session["user"] = user;
+            Response.Redirect("Default3.aspx");
         }
 
         //  Проверка пользователя с аккаунтом [user/age]:
