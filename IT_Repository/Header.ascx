@@ -46,8 +46,8 @@
 
         <div class="col-xs-4 col-md-4">
              <div id="login">
-             <a href="#"><h5>Log in</h5></a>
-             <a href="#"><h5>Registration</h5></a>
+             <a href="Autho.aspx"><h5>Log in</h5></a>
+             <a href="Reg.aspx"><h5>Registration</h5></a>
         </div>
     </div>
 </div>
