@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <form role="form" method="POST" action="#">
+           
                 <fieldset>
                     <legend>Your Cabinet</legend>
                     <div class="form-group">
@@ -19,10 +19,11 @@
                 </fieldset>
                 <fieldset>
                     <button type="submit" class="btn btn-success">Submit</button>
-                     <button type="button" class="btn">Forgot your password?</button>
+                    <button type="button" class="btn">Forgot your password?</button>
+                    <asp:Button ID="btnTest" CssClass="btn btn-success" runat="server" Text="Test" PostBackUrl="/Reg.aspx" />
 
                 </fieldset>
-            </form>
+          
             <hr />
         </div>
     </div>

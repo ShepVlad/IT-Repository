@@ -19,7 +19,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" method="post">
     <div class="container">
         <header>
             <uc1:Header runat="server" ID="Header" />
@@ -28,7 +28,8 @@
             <uc1:Nav runat="server" ID="Nav" />
         </nav>
         <article>
-            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" >
+
             </asp:ContentPlaceHolder>
         </article>
         <footer>
