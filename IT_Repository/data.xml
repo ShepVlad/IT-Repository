@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+  <person user="Ivanov" age="21" />
+  <person user="Petrov" age="22" />
+  <person user="Sidorov" age="23" />
+</data>
