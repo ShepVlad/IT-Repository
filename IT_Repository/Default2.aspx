@@ -6,6 +6,6 @@
     Person:<input type="text" name="user" />
     Age:<input type="text" name="age" />
     <asp:Button ID="submit" Text="Отправить" runat="server" OnClick="submit_Click" />
-    <asp:Label ID="output" Text="Output" runat="server" />
+    <asp:Label ID="output" CssClass="" Text="Output" runat="server" />
 </asp:Content>
 
