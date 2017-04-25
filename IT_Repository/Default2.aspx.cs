@@ -19,7 +19,7 @@ public partial class Default2 : System.Web.UI.Page
         string age = Request.Form["age"];
         output.Text = "user: " + user + "; age: " + age;
 
-        string path = "data.xml";
+        string path = Server.MapPath("data.xml");
         XDocument doc = XDocument.Load(path);
         doc.Element("data").Add(
             new XElement("person",
