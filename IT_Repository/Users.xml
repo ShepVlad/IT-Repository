@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <users>
-  <user id="1" passw="student" email="step@gmail.com" country="Украина" name="VDVNK" lname="SMLSN" />
-  <user id="2" passw="12345" email="vlad@mail.ru" country="Украина" name="Vlad" lname="Shepeliuk" />
+  <user id="1" passw="student" email="step@gmail.com" country="Украина" name="VDVNK" lname="SMLSN" role="admin" />
+  <user id="2" passw="12345" email="vladSkiba@mail.ru" country="Украина" name="Vlad" lname="Shepeliuk" role="admin" />
+  <user id="3" passw="12345" email="vladShepeliuk@mail.ru" country="Украина" name="Vlad" lname="Shepeliuk" role="admin" />
+  <user id="4" passw="12345" email="Mironov@mail.ru" country="Украина" name="Vlad" lname="Shepeliuk" role="admin" />
+  <user id="5" passw="12345" email="Nataha@mail.ru" country="Украина" name="Vlad" lname="Shepeliuk" role="admin" />
+  
+  
 </users>
