@@ -22,7 +22,7 @@ public partial class Header : System.Web.UI.UserControl
         else
         {
             User = (string)Session["user"];
-            Link1 = "<a href='Autho.aspx'><h5>Log out</h5></a>";
+            Link1 = "<a href='Log_out.aspx'><h5>Log out</h5></a>";
             Link2 = "<a href='Reg.aspx'><h5> </h5></a>";
         }
             
