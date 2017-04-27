@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
+using System.Data;
+using System.Data.SqlClient;
 
 public partial class Reg : System.Web.UI.Page
 {
@@ -15,6 +17,10 @@ public partial class Reg : System.Web.UI.Page
 
     protected void btnRegister_Click(object sender, EventArgs e)
     {
+       
+
+
+
         if (txtPassword.Text!=txtConfirmPassword.Text)
         {
             txtConfirmPassword.BorderColor = System.Drawing.Color.Red;
@@ -27,26 +33,38 @@ public partial class Reg : System.Web.UI.Page
         string pass = txtPassword.Text;
         string email = txtEmail.Text;
         string country = ddlCountry.SelectedItem.Text;
-      
 
-        string path = Server.MapPath("Users.xml");
-        XDocument doc = XDocument.Load(path);
-        XElement root = doc.Root;
-        XElement lastPost = (XElement)root.LastNode;
-        string id =  lastPost.FirstAttribute.Value;
-        int idi = Convert.ToInt32(id);
-        idi += 1;
-        id = Convert.ToString(idi);
-        doc.Element("users").Add(
-            new XElement("user",
-                new XAttribute("id", id),
-                 new XAttribute("passw", pass),
-                  new XAttribute("email", email),
-                   new XAttribute("country", country),
-                     new XAttribute("name", name),
-                       new XAttribute("lname", lname)
-                ));
-        doc.Save(path);
-      //  Response.Redirect("");
+
+        //string path = Server.MapPath("Users.xml");
+        //XDocument doc = XDocument.Load(path);
+        //XElement root = doc.Root;
+        //XElement lastPost = (XElement)root.LastNode;
+        //string id =  lastPost.FirstAttribute.Value;
+        //int idi = Convert.ToInt32(id);
+        //idi += 1;
+        //id = Convert.ToString(idi);
+        //doc.Element("users").Add(
+        //    new XElement("user",
+        //        new XAttribute("id", id),
+        //         new XAttribute("passw", pass),
+        //          new XAttribute("email", email),
+        //           new XAttribute("country", country),
+        //             new XAttribute("name", name),
+        //               new XAttribute("lname", lname)
+        //        ));
+        //doc.Save(path);
+
+        int id = 2;
+        string connectionstring = "Data Source=SQL6001.SmarterASP.NET;Initial Catalog=DB_A1F08F_ITPortalRep;User Id=DB_A1F08F_ITPortalRep_admin;Password=VladVsemRad123456;";
+        SqlConnection conn = new SqlConnection(connectionstring);
+        conn.Open();
+        string query = "Insert into Users(id,name,lname,email,country,role,password) values ({0},'{1}','{2}','{3}','{4}','{5}','{6}')";
+        query = string.Format(query, id, name, lname, email, country, "user", pass);
+        SqlCommand cmd = new SqlCommand(query, conn);
+        cmd.ExecuteNonQuery();
+        conn.Close();
+        Response.Redirect("Autho.aspx");
+
+        //  Response.Redirect("");
     }
 }
