@@ -38,16 +38,21 @@
     <br style="clear: left"/>
 </div>--%>
 <div class="row">
-        <div class="col-xs-8 col-md-8">
+        <div class="col-xs-6 col-md-6">
             <img id ="logo" src="Images/SHAG.png"  width="100" height="100"/>
             <h3 id="title" >IT-Repository</h3>
             <h4 id="subTitle">Open platform for developers</h4>
         </div>
+        
+       <%-- <div class="col-xs-4 col-md-4">
+            Приветствие - <%= User %>
+        </div>--%>
 
-        <div class="col-xs-4 col-md-4">
+        <div class="col-xs-6 col-md-6">
              <div id="login">
-             <a href="Autho.aspx"><h5>Log in</h5></a>
-             <a href="Reg.aspx"><h5>Registration</h5></a>
+             <h4><%= User %></h4>
+             <%= Link1 %>
+             <%= Link2 %>
         </div>
     </div>
 </div>

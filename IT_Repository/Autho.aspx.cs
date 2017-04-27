@@ -24,16 +24,16 @@ public partial class Autho : System.Web.UI.Page
 
         var res = from u in doc.Element("users").Elements("user")
                   where u.Attribute("email").Value == email &&
-                  u.Attribute("password").Value == password
+                  u.Attribute("passw").Value == password
                   select u;
         if(res.Count() == 0)
         {
-            //false;
+            Response.Write("Авторизация провалена");
         }
         else
         {
-
-            //true;
+            Session["user"] = email;
+            Response.Redirect("Default.aspx"); 
         }
     }
 
