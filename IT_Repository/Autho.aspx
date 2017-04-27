@@ -10,11 +10,11 @@
                     <legend>Your Cabinet</legend>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="authEmail" placeholder="Email" />
+                        <input type="email" class="form-control" id="authEmail" placeholder="Email" name="email" />
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="authPassword" placeholder="Password"  />
+                        <input type="password" class="form-control" id="authPassword" placeholder="Password" name="password"/>
                     </div>
                 </fieldset>
                 <fieldset>
