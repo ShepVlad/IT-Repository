@@ -17,10 +17,6 @@ public partial class Reg : System.Web.UI.Page
 
     protected void btnRegister_Click(object sender, EventArgs e)
     {
-       
-
-
-
         if (txtPassword.Text!=txtConfirmPassword.Text)
         {
             txtConfirmPassword.BorderColor = System.Drawing.Color.Red;
@@ -32,27 +28,9 @@ public partial class Reg : System.Web.UI.Page
         string lname = txtLastName.Text;
         string pass = txtPassword.Text;
         string email = txtEmail.Text;
-        string country = ddlCountry.SelectedItem.ToString();
+        string country = ddlCountry.SelectedItem.Text;
+        
 
-
-        //string path = Server.MapPath("Users.xml");
-        //XDocument doc = XDocument.Load(path);
-        //XElement root = doc.Root;
-        //XElement lastPost = (XElement)root.LastNode;
-        //string id =  lastPost.FirstAttribute.Value;
-        //int idi = Convert.ToInt32(id);
-        //idi += 1;
-        //id = Convert.ToString(idi);
-        //doc.Element("users").Add(
-        //    new XElement("user",
-        //        new XAttribute("id", id),
-        //         new XAttribute("passw", pass),
-        //          new XAttribute("email", email),
-        //           new XAttribute("country", country),
-        //             new XAttribute("name", name),
-        //               new XAttribute("lname", lname)
-        //        ));
-        //doc.Save(path);
 
          int id ;
         string idshka="";
@@ -60,7 +38,6 @@ public partial class Reg : System.Web.UI.Page
         SqlConnection conn = new SqlConnection(connectionstring);
         conn.Open();
 
-      //  string query = "SELECT * FROM dbo.Users)";
         SqlDataAdapter dataadapter = new SqlDataAdapter("SELECT * FROM dbo.Users",conn);
         DataTable users = new DataTable();
         dataadapter.Fill(users);
@@ -70,7 +47,6 @@ public partial class Reg : System.Web.UI.Page
         }
         id = Convert.ToInt32(idshka);
         id += 1;
-
 
         string query = string.Format("Insert into Users(id,name,lname,email,country,role,password) values ({0},'{1}','{2}','{3}','{4}','{5}','{6}')"
             ,id,name,lname,email,country,"user",pass);
