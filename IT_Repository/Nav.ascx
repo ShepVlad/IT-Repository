@@ -15,8 +15,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <%--<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>--%>
-        <li><a href="https://www.ukr.net/news/kiev.html">News</a></li>
-        <li><a href="https://www.ukr.net/news/tehnologii.html">Articals</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Articals</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
           <ul class="dropdown-menu">
