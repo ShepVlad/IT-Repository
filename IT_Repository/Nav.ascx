@@ -17,27 +17,12 @@
         <%--<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>--%>
         <li><a href="#">News</a></li>
         <li><a href="#">Articals</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">c/c++</a></li>
-            <li><a href="#">.Net</a></li>
-            <li><a href="#">Web</a></li>
-            <li><a href="#">Java</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Android</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">PHP</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">SQL</a></li>
-            <!--<li><a href="#"></a></li>--->
-          </ul>
-        </li>
+          <li><a href="#">Projects</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="https://metanit.com/">METANIT.COM</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All projects <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Concrete Projects <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">c/c++</a></li>
             <li><a href="#">.Net</a></li>
