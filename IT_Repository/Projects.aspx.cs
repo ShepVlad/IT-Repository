@@ -12,8 +12,12 @@ public partial class Projects : System.Web.UI.Page
 
     }
 
-    protected void hlKiev_Load(object sender, EventArgs e)
+  
+
+    protected void AddProj_Click(object sender, EventArgs e)
     {
-        
+
+        Response.Redirect("CreateProject.aspx");
+
     }
 }

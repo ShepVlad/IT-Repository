@@ -26,31 +26,9 @@
             </ul>
         </li>
 
-        <%--  ОЦЕНКА  --%>
+      
 
-        <li role="presentation" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ОЦЕНКА <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-                <li><a href="#">ОТЛИЧНО</a></li>
-                <li><a href="#">ХОРОШО</a></li>
-                <li><a href="#">УДОВЛИТВОРИТЕЛЬНО</a></li>
-                <li><a href="#">БЕЗ ОЦЕНКИ</a></li>
-            </ul>
-        </li>
-
-        <%--  ПОТОК--%>
-
-        <li role="presentation" class="dropdown">
-
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ПОТОК <span class="caret"></span>
-            </a>
-
-            <ul class="dropdown-menu">
-                <li><a href="#">ВЫПУСК 2017 ВЕСНА</a></li>
-                <li><a href="#">ВЫПУСК 2017 ОСЕНЬ</a></li>
-            </ul>
-        </li>
+      
 
         <%--ТИП РАБОТЫ--%>
 
@@ -72,29 +50,15 @@
             </ul>
         </li>
 
-        <%--   ФИЛИАЛ--%>
-
-
-        <li role="presentation" class="dropdown">
-
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ФИЛИАЛ <span class="caret"></span>
-
-            </a>
-
-            <ul class="dropdown-menu">
-               <%-- АСП КОНТЕНТ--%>
-                 <li><asp:HyperLink runat="server" ID="hlKiev" CssClass="btn" OnLoad="hlKiev_Load">КИЕВ</asp:HyperLink></li>
-                <li><a href="#">ДОНЕЦК</a></li>
-                <li><a href="#" >ЛЬВОВ</a></li>
-                <li ><a  href="#">ОДЕССА</a></li>
-            </ul>
-        </li>
+       <asp:Button CssClass="btn btn-success" runat="server" ID="AddProj" Text="Добавить Проект"  OnClick="AddProj_Click"  />
+   
 
     </ul>
    
     <hr />
    
-    <div class="row">
+    <div id="ProjList" class="row">
+
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <img src="Images/About.jpg" alt="Просто Пример"/>
