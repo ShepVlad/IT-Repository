@@ -19,7 +19,7 @@
             </a>
 
             <ul class="dropdown-menu">
-                 <li><a href="#">ДИПЛОМНЫЙ</a></li>
+                <li><a href="#" >ДИПЛОМНЫЙ</a></li>
                 <li><a href="#">КУРСОВОЙ</a></li>
                 <li><a href="#">КОНКУРСНЫЙ</a></li>
                 <li><a href="#">В СВОБОДНОЕ ВРЕМЯ</a></li>
@@ -27,9 +27,6 @@
         </li>
 
       
-
-      
-
         <%--ТИП РАБОТЫ--%>
 
         <li role="presentation" class="dropdown">

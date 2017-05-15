@@ -4,9 +4,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <asp:FileUpload ID="FileUpload1" runat="server" OnInit="FileUpload1_Init"  />
+    <asp:Image runat="server" ID ="imgProglogo"  ImageUrl="~/Images/About.jpg"/>
 
+    <asp:Label ID="lbAlert" runat="server" ></asp:Label>
+    <asp:FileUpload ID="FUL" runat="server"  Visible="true" OnLoad="FileUpload1_Load"/>
 
-
+    <asp:Button runat="server" ID="upfile" OnClick="UploadFile_Click"  Text="Upload file" />
+ 
 </asp:Content>
 
