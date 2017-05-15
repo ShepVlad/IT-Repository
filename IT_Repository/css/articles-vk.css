@@ -1,0 +1,38 @@
+.article-short-vk {
+	width:100%;
+	min-height:30vh;
+	padding:2vh;
+	border-radius:5px;
+	border:2px solid black;
+	position:relative;
+}
+.article-short-image-vk {
+	width:25%;
+	float:left;
+    border-radius:5px;
+}
+.article-short-wrap-vk {
+	width:75%;
+	float:left;
+	padding: 10px;
+	position: relative;
+}
+.article-short-caption-vk {
+	margin: 0;
+	display: inline-block;
+}
+.article-short-annotation-vk {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+}
+.article-short-date-vk {
+	position: absolute;
+    right: 0;
+    top: 10px;
+}
+.article-short-author-vk {
+	position: absolute;
+    right: 0;
+    bottom: 10px;
+}
