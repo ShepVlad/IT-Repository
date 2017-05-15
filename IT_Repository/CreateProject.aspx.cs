@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -98,5 +99,56 @@ public partial class CreateProject : System.Web.UI.Page
         //    </div>
         //    </form>
         //</body>
+    }
+
+    protected void UploadFile_Click(object sender, EventArgs e)
+    {
+        string savePath = Server.MapPath(@"ProgImg\");
+
+        // Before attempting to save the file, verify
+        // that the FileUpload control contains a file.
+        if (FUL.HasFile)
+        {
+            // Get the name of the file to upload.
+            string fileName = Server.HtmlEncode(FUL.FileName);
+
+            // Get the extension of the uploaded file.
+            string extension = System.IO.Path.GetExtension(fileName);
+
+            // Allow only files with .doc or .xls extensions
+            // to be uploaded.
+            if ((extension == ".jpg") || (extension == ".png"))
+            {
+                
+                // Append the name of the file to upload to the path.
+                savePath += fileName;
+
+                // Call the SaveAs method to save the 
+                // uploaded file to the specified path.
+                // This example does not perform all
+                // the necessary error checking.               
+                // If a file with the same name
+                // already exists in the specified path,  
+                // the uploaded file overwrites it.
+                FUL.SaveAs(savePath);
+
+                imgProglogo.ImageUrl = @savePath;
+
+                // Notify the user that their file was successfully uploaded.
+                lbAlert.Text = "Your file was uploaded successfully.";
+            }
+            else
+            {
+                // Notify the user why their file was not uploaded.
+                lbAlert.Text = "Your file was not uploaded because " +
+                                         "it does not have a .doc or .xls extension.";
+            }
+        }
+
+    }
+
+    protected void FileUpload1_Load(object sender, EventArgs e)
+    {
+
     }
 }
