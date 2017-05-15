@@ -13,7 +13,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="News.aspx">News</a></li>
-        <li><a href="#">Articals</a></li>
+        <li><a href="Articles.aspx">Articles</a></li>
           <li><a href="Projects.aspx">Projects</a></li>
       </ul>
     </div>
